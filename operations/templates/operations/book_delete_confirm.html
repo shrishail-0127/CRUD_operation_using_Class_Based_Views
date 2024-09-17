@@ -1,0 +1,8 @@
+<h1>Are you sure you want to delete "{{ object.title }}"?</h1>
+<p>This action cannot be undone.</p>
+
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Yes, delete</button>
+    <a href="{% url 'book-list' %}">Cancel</a>
+</form>

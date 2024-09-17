@@ -1,7 +1,7 @@
 <h1>Book List</h1>
-{% for book in object_list %}
+{% for book in books %}
 <ul>
-    <li> {{book.name}} </li>
+    <a href="{% url 'book-detail' book.id %}"><li> {{book.name}} </li></a>
 </ul>
 
 {% endfor %}

@@ -1,0 +1,13 @@
+<form method="" action="{% url 'book-delete' book.id %}">
+    <h1>Book Title : {{book.name}}</h1>
+    <p>Book Author : {{book.author}}</p>
+    <p>Book Description : {{book.description}}</p>
+    <p>Number of pages: {{book.pages}}</p>
+
+    <button type="submit">Delete</button>
+
+
+</form>
+<form method="" action="{% url 'book-update' book.id %}">
+    <button type="submit">Update</button>
+</form>
